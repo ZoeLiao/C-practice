@@ -1,10 +1,16 @@
 # C-practice
 
+## Scripts:
+- base.c: warm up
+- print.c: practice printf function
+
 ## How to run a C script:
 - `cc -o <filename> <program_name.c>`
 - `.<filename>`
 
-## type
+## Notes
+
+### type
 Type          | bytes | range |
 --------------|:-----:|:-----:|
 long int      |   4   | - 2147483648 ~ 2147483647 |
