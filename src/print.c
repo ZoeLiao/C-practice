@@ -1,11 +1,11 @@
-/* print.c: practice printf function 
+/* print.c: practice printf function
  *
  * output:
  *
  *   Character && Strint:
  *   %c: A character, e.g. a
  *   %s: A string, e.g. string
- *   
+ *
  *   Integer:
  *   %d: A decimal integer, e.g. 1
  *   %ld: A long integer, e.g. 2147483647
@@ -14,7 +14,7 @@
  *   %o: A unsigned octal integer, e.g. -16 = 37777777760
  *   %u: A unsigned decimal integer, e.g. -16 = 4294967280
  *   %x: A unsigned hexadecimal integer, e.g. 16 = 10
- *   
+ *
  *   Flags:
  *   Align text right (default): num =      1 (%6d)
  *   Align text left (use %-d): num = 1      (%-6d)
@@ -36,15 +36,15 @@ int main(void){
     long num = 2147483647;
     printf("%%ld: A long integer, e.g. %ld\n", num);
 
-    float num2 = (float)num;
-    printf("%%f: A float integer, e.g. (%%2.2f) %f = %2.2f\n", num2, num2);
-    printf("%%e: A float integer (type: Euler's num2ber), e.g. %e\n", num2);
+    float float_num = (float)num;
+    printf("%%f: A float integer, e.g. (%%2.2f) %f = %2.2f\n", float_num, float_num);
+    printf("%%e: A float integer (type: Euler's float_number), e.g. %e\n", float_num);
 
-    int num3 = -16;
-    printf("%%o: A unsigned octal integer, e.g. %d = %o\n", num3, num3);
-    printf("%%u: A unsigned decimal integer, e.g. %d = %u\n", num3, num3);
-    unsigned int num4 = 16; 
-    printf("%%x: A unsigned hexadecimal integer, e.g. %d = %x\n", num4, num4);
+    int negative_num = -16;
+    printf("%%o: A unsigned octal integer, e.g. %d = %o\n", negative_num, negative_num);
+    printf("%%u: A unsigned decimal integer, e.g. %d = %u\n", negative_num, negative_num);
+    unsigned int sixteen = 16;
+    printf("%%x: A unsigned hexadecimal integer, e.g. %d = %x\n", sixteen, sixteen);
 
     printf("\nFlags:\n");
 
@@ -53,6 +53,6 @@ int main(void){
 
     printf("Display sign (use %%+d): %+d (%%+d)\n", 1);
     printf("Display space if it is positive (use %% d): % d (%% d)\n", 1);
-    printf("Pad a numeric value with leading zeros (use %%0): %09.2f (%%02.2f)", (float)num4);
+    printf("Pad a numeric value with leading zeros (use %%0): %09.2f (%%02.2f)", (float)sixteen);
     return 0;
 }
