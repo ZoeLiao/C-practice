@@ -3,6 +3,7 @@
 ## Scripts:
 - base.c: warm up
 - print.c: practice printf function
+- scanf.c: practice getchar, putchar, and scanf function
 
 ## How to run a C script:
 - `cc -o <filename> <program_name.c>`
@@ -29,3 +30,14 @@ unsigned int       |   4   | 0 ~ 4294967295 |
 unsigned short int |   2   | 0 ~ 65535 |
 
 - Note: Overflow appears when using improper type
+
+## scanf
+- Read formatted data from stdin
+- type: %c, %d, %f, %lf, %s, %o (octal integer), %x (hexadecimal integer)
+
+## The Standard Files
+Standard File   | File Pointer  |  Device   |
+----------------|:--------------:|:---------:|
+Standard input  |   stdin   | Keyboard |
+Standard output	|   stdout	| Screen |
+Standard error	|   stderr  | Your screen |
