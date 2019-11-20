@@ -7,7 +7,7 @@
 
 ## How to run a C script:
 - `cc -o <filename> <program_name.c>`
-- `.<filename>`
+- `./<filename>`
 
 ## Notes
 
@@ -41,3 +41,10 @@ Standard File   | File Pointer  |  Device   |
 Standard input  |   stdin   | Keyboard |
 Standard output	|   stdout	| Screen |
 Standard error	|   stderr  | Your screen |
+
+## expressions (operand & operator):
+- expressions consist of two types of components:
+- Operand（運算元）: the objects that are manipulated. e.g., 1, 2, a
+    - assignment operator: `=`
+- Operator（運算式）: the symbols that represent specific actions. e.g., +, -, *, /
+- goto: Not Recommended
