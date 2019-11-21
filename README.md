@@ -48,3 +48,6 @@ Standard error	|   stderr  | Your screen |
     - assignment operator: `=`
 - Operator（運算式）: the symbols that represent specific actions. e.g., +, -, *, /
 - goto: Not Recommended
+
+## variable
+- local variable, global variable, static variable.
