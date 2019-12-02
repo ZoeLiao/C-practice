@@ -11,7 +11,7 @@
 
 ## Notes
 
-### type
+### Type
 Type          | bytes | range |
 --------------|:-----:|:-----:|
 long int      |   4   | - 2147483648 ~ 2147483647 |
@@ -31,7 +31,7 @@ unsigned short int |   2   | 0 ~ 65535 |
 
 - Note: Overflow appears when using improper type
 
-## scanf
+## `scanf`
 - Read formatted data from stdin
 - type: %c, %d, %f, %lf, %s, %o (octal integer), %x (hexadecimal integer)
 
@@ -42,12 +42,35 @@ Standard input  |   stdin   | Keyboard |
 Standard output	|   stdout	| Screen |
 Standard error	|   stderr  | Your screen |
 
-## expressions (operand & operator):
+## Expressions (operand & operator):
 - expressions consist of two types of components:
 - Operand（運算元）: the objects that are manipulated. e.g., 1, 2, a
     - assignment operator: `=`
-- Operator（運算式）: the symbols that represent specific actions. e.g., +, -, *, /
+- Operator（運算式）: the symbols that represent specific actions. e.g., +, -, \*, \/
 - goto: Not Recommended
 
-## variable
+## Variable
 - local variable, global variable, static variable.
+
+## Function
+- default - call by value: copy the actual value of an argument into the formal parameter of the function
+
+## Preprocessor (前置處理)
+- The preprocessor provides the ability for the inclusion of header files, macro (巨集) expansions, conditional compilation, and line control
+- `#define`: 
+    - directive allows the definition of macros within the source code 
+    - format (uppercase):
+        - `#define CNAME value`, e.g., `#define PI 3.14`
+        - `#define CNAME (expression)`, e.g., `#define SQUARE(n) (n)*(n)`
+    - memory:
+        - `#define` is better than const
+        - `#define` is worse than function 
+    - efficency:
+        - `#define` is better than const
+        - `#define` is better than function
+    - Can not be changed
+
+# Reference:
+- [https://www.tutorialspoint.com/index.htm](https://www.tutorialspoint.com/index.htm)
+- [wiki](https://en.wikipedia.org/wiki/Main_Page)
+- [C 語言教學手冊](https://www.books.com.tw/products/0010360466)
