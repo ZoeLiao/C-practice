@@ -57,18 +57,24 @@ Standard error	|   stderr  | Your screen |
 
 ## Preprocessor (前置處理)
 - The preprocessor provides the ability for the inclusion of header files, macro (巨集) expansions, conditional compilation, and line control
-- `#define`: 
-    - directive allows the definition of macros within the source code 
+- `#define`:
+    - directive allows the definition of macros within the source code
     - format (uppercase):
         - `#define CNAME value`, e.g., `#define PI 3.14`
         - `#define CNAME (expression)`, e.g., `#define SQUARE(n) (n)*(n)`
     - memory:
         - `#define` is better than const
-        - `#define` is worse than function 
+        - `#define` is worse than function
     - efficency:
         - `#define` is better than const
         - `#define` is better than function
     - Can not be changed
+- `#inclue`:
+    - causes the contents of a second file to be inserted into the original file
+    - these included files are called copybooks or header files
+    - format:
+        - `#include "header file path"`
+        - `#include <C package>`
 
 # Reference:
 - [https://www.tutorialspoint.com/index.htm](https://www.tutorialspoint.com/index.htm)
