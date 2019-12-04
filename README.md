@@ -76,6 +76,16 @@ Standard error	|   stderr  | Your screen |
         - `#include "header file path"`
         - `#include <C package>`
 
+# Array
+- An array is a linear, homogeneous, contiguous collection or data structure consisting of a cllection of elements
+- To be efficient, C do not check the index is out of bound or not
+- format:
+    - `<data type> <array_name> [number] = {v1, v2, ..}`
+    e.g., `int scores[3] = {91, 94, 98};` 
+- `sizeof`:
+    - format: `sizeof(<array_name>)`
+    - get the size of array 
+
 # Reference:
 - [https://www.tutorialspoint.com/index.htm](https://www.tutorialspoint.com/index.htm)
 - [wiki](https://en.wikipedia.org/wiki/Main_Page)
