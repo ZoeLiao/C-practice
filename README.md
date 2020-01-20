@@ -78,7 +78,8 @@ Standard error	|   stderr  | Your screen |
 
 # Array
 - An array is a linear, homogeneous, contiguous collection or data structure consisting of a cllection of elements
-- To be efficient, C do not check the index is out of bound or not
+- To be efficient, C do not check the index is out of bound or not.
+- The address of an array is the address of the first element of an array.
 - format:
     - `<data type> <array_name> [number] = {v1, v2, ..}`
     e.g., `int scores[3] = {91, 94, 98};` 
